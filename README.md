@@ -42,6 +42,18 @@ The model follows a structured approach to feature processing and fusion:
 | **Feature Extraction** | Bi-directional LSTM | Capturing sequential dependencies in text and visual data. |
 | **Alignment** | CMU-MultimodalSDK | Used for word-level alignment and standardization of high-frequency features. |
 
+## 🚀 Results Analysis
+
+The **Gated Multimodal Attention Model** demonstrates strong performance across both binary classification and sentiment intensity regression tasks. The results confirm that the custom fusion and attention mechanisms successfully leverage complementary information, leading to accurate and nuanced predictions.
+
+| Metric | Value | Interpretation |
+| :--- | :--- | :--- |
+| **Test Accuracy** | **70.41%** | The model is generally reliable, achieving correct binary sentiment classification in over 70% of test cases. |
+| **Test F1-score** | **0.7231** | A robust measure confirming the model's balanced performance, accounting for both precision (avoiding false positives) and recall (identifying all relevant positives). |
+| **Test Correlation** | **0.5570** | Signifies a moderate-to-strong positive correlation between predicted sentiment scores and true sentiment intensity (ranging from -3 to +3), demonstrating the model's ability to capture nuanced intensity. |
+| **Test MAE** | **1.0450** | On average, the model's predicted sentiment score is approximately 1.04 units away from the ground truth intensity, indicating reasonable accuracy in regression despite the complexity of the task. |
+
+
 ## ⚙️ Setup and Usage
 
 ### Prerequisites

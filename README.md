@@ -11,9 +11,8 @@ The model was developed and rigorously tested on the well-established **CMU-MOSI
 
 * **Multimodal Fusion:** Successfully processes and aligns three asynchronous modalities (Text, Visual, Acoustic) to build a holistic representation of human emotion.
 * **Gated Fusion Mechanism:** Implements a proprietary **Modality Gated Fusion** layer that uses visual features to selectively amplify or suppress corresponding textual features, preventing noise and maximizing inter-modal synergy.
-* **Attention-Driven Classification:** Utilizes a **Self-Attention** mechanism on the fused features to assign importance scores dynamically, ensuring the final classification decision is based on the most salient segments of the conversational sequence.
+* **Attention-Driven Classification:** Utilizing a **Self-Attention** mechanism on the fused features to assign importance scores dynamically, ensuring the final classification decision is based on the most salient segments of the conversational sequence.
 * **Performance:** Achieved strong classification performance with a **70.41% Accuracy** and **72.31% F1 score** on the CMU-MOSI dataset.
-* **Code Quality:** Custom **PyTorch** implementations for dataset loading, sequence padding (`multi_collate`), and model architecture, emphasizing performance tuning and code clarity.
 
 ## 🧠 Model Architecture (GatedCrossModalAttentionFusion)
 
